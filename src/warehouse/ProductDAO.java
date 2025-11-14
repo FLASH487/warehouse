@@ -15,7 +15,7 @@ public class ProductDAO {
         conn = DriverManager.getConnection(
                 "jdbc:mysql://127.0.0.1:3306/warehouse",
                 "root",
-                ""   // EMPTY PASSWORD
+                ""   
         );
     }
 

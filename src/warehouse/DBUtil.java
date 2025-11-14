@@ -6,8 +6,8 @@ import java.sql.SQLException;
 
 public class DBUtil {
     private static final String URL = "jdbc:mysql://127.0.0.1:3306/warehouse";
-    private static final String USER = "root";        // change if needed
-    private static final String PASS = "YOUR_PASSWORD"; // change this
+    private static final String USER = "root";        
+    private static final String PASS = "YOUR_PASSWORD"; 
 
     static {
         try {

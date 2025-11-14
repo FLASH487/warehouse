@@ -18,14 +18,14 @@ public class SimpleClient {
             );
             Scanner sc = new Scanner(System.in);
 
-            // ---- READ WELCOME ----
+            
             String line;
             while ((line = in.readLine()) != null) {
                 System.out.println(line);
                 if (line.startsWith("Commands")) break;
             }
 
-            // ---- COMMAND LOOP ----
+            
             while (true) {
                 System.out.print("> ");
                 String cmd = sc.nextLine();
@@ -34,7 +34,7 @@ public class SimpleClient {
                 if (cmd.equalsIgnoreCase("QUIT"))
                     break;
 
-                // read all responses
+                
                 while ((line = in.readLine()) != null) {
                     if (line.trim().isEmpty()) break;
                     System.out.println(line);

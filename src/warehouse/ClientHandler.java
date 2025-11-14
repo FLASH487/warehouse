@@ -42,7 +42,7 @@ public class ClientHandler implements Runnable {
 
                 System.out.println("DEBUG: Received command: " + line);
 
-                // ---------- LIST ----------
+                
                 if (p[0].equalsIgnoreCase("LIST")) {
 
                     var list = productDAO.findAll();
@@ -56,7 +56,7 @@ public class ClientHandler implements Runnable {
                     out.println();
                 }
 
-                // ---------- ORDER ----------
+                
                 else if (p[0].equalsIgnoreCase("ORDER") && p.length == 3) {
                     try {
                         int pid = Integer.parseInt(p[1]);
@@ -77,7 +77,7 @@ public class ClientHandler implements Runnable {
                     }
                 }
 
-                // ---------- STATUS ----------
+                
                 else if (p[0].equalsIgnoreCase("STATUS") && p.length == 2) {
 
                     int id = Integer.parseInt(p[1]);
@@ -87,7 +87,7 @@ public class ClientHandler implements Runnable {
                     out.println();
                 }
 
-                // ---------- QUIT ----------
+                
                 else if (p[0].equalsIgnoreCase("QUIT")) {
                     break;
                 }
